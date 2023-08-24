@@ -403,3 +403,11 @@ FodyWeavers.xsd
 /.vs/savi/FileContentIndex/af6599af-da03-4400-b54d-c9ac6abf6503.vsidx
 /.vs/savi/FileContentIndex/e304773e-ab00-4ab9-9312-f2065fc71f93.vsidx
 /.vs/savi/v17/.suo
+/API/bin/Debug/net7.0/API.dll
+/API/bin/Debug/net7.0/API.pdb
+/API/obj/Debug/net7.0/ref/API.dll
+/API/obj/Debug/net7.0/refint/API.dll
+/API/obj/Debug/net7.0/API.csproj.CoreCompileInputs.cache
+/API/obj/Debug/net7.0/API.dll
+/API/obj/Debug/net7.0/API.MvcApplicationPartsAssemblyInfo.cs
+/API/obj/Debug/net7.0/API.pdb
