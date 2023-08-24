@@ -396,3 +396,10 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/.vs/ProjectEvaluation/savi.metadata.v6.1
+/.vs/ProjectEvaluation/savi.projects.v6.1
+/.vs/savi/FileContentIndex/09b39889-b0ea-40f8-8707-ef3ec6d6dda7.vsidx
+/.vs/savi/FileContentIndex/8354fe2f-6773-486d-a910-7e0414a75a64.vsidx
+/.vs/savi/FileContentIndex/af6599af-da03-4400-b54d-c9ac6abf6503.vsidx
+/.vs/savi/FileContentIndex/e304773e-ab00-4ab9-9312-f2065fc71f93.vsidx
+/.vs/savi/v17/.suo
