@@ -1,6 +1,7 @@
-﻿using API.Data;
-using API.Entities;
+﻿using Core.Entities;
+using Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
@@ -15,13 +16,13 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public ActionResult GetPublications()
+        public async Task<ActionResult<List<Publication>>> GetAllPublication()
         {
-            var publications = _dbContext.Publications.ToList();
-            return Ok(publications);
+            var publications = await _dbContext.Publications.ToListAsync();
+            return publications;
         }
         [HttpPost]
-        public ActionResult Post(Publication publication)
+        public async Task<ActionResult<List<Publication>>> CreatePublication([FromBody] Publication publication)
         {
             Publication pub = new()
             {
@@ -29,9 +30,15 @@ namespace API.Controllers
                 CreatedDate = DateTime.Now,
                 UpdatedDate = DateTime.Now
             };
-            _dbContext.Publications.Add(pub);
-            _dbContext.SaveChanges();
+            await _dbContext.Publications.AddAsync(pub);
+            await _dbContext.SaveChangesAsync();
             return Ok(pub);
+        }
+        [HttpGet("{id:int}")]
+        public ActionResult GetPublication(int id)
+        {
+            var publication = _dbContext.Publications.FirstOrDefault(x => x.Id == id);
+            return Ok(publication);
         }
     }
 }

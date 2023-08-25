@@ -415,3 +415,4 @@ FodyWeavers.xsd
 /API/obj/Debug/net7.0/API.GeneratedMSBuildEditorConfig.editorconfig
 /API/obj/API.csproj.nuget.dgspec.json
 /API/obj/project.nuget.cache
+/API/bin/Debug/net7.0/API.deps.json
