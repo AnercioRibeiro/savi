@@ -30,4 +30,4 @@ jobs:
 
       - name: Build Solution
         run: |
-          msbuild.exe Sandbox.sln /p:platform="Any CPU" /p:configuration="Release"
+          msbuild.exe savi.sln /p:platform="Any CPU" /p:configuration="Release"
